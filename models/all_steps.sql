@@ -84,9 +84,9 @@ week(Cast(DATE as datetime)) as week,
     month(Cast(DATE as datetime)) as month,
     year(Cast(DATE as datetime)) as year
         
-    from INTERVIEW_DB.PLAYGROUND_DEEPAM_SINGLA.COVID_CASE_DETAILS 
-	inner join INTERVIEW_DB.PLAYGROUND_DEEPAM_SINGLA.LOCATIONS 
-	on INTERVIEW_DB.PLAYGROUND_DEEPAM_SINGLA.COVID_CASE_DETAILS.Location_ISO_Code = INTERVIEW_DB.PLAYGROUND_DEEPAM_SINGLA.LOCATIONS.Location_ISO_Code
+    from COVID_CASE_DETAILS as c
+	inner join LOCATIONS as l
+	on c.Location_ISO_Code = l.Location_ISO_Code
 	
 )
 
