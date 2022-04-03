@@ -90,7 +90,7 @@ week(Cast(DATE as datetime)) as week,
 	
 )
 
-Select * from Complete_Data;
+Select * from Complete_Data
 
 
 
