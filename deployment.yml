@@ -1,0 +1,9 @@
+jobs:
+
+ - name: daily
+   targetName: Development 
+   schedule: 0 12 * * * 
+   steps:
+     - name: run models 
+       command: dbt run 
+
