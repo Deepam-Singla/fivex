@@ -62,7 +62,7 @@ Complete_Data  as
 (
 
 select
-INTERVIEW_DB.PLAYGROUND_DEEPAM_SINGLA.COVID_CASE_DETAILS.Location_ISO_Code
+c.Location_ISO_Code
 ,New_Cases
 ,New_Deaths
 ,New_Recovered
